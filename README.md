@@ -2,12 +2,30 @@
 
 Este repositório contém exemplos de código, exercícios e projetos que desenvolvi enquanto aprendia sobre o banco de dados MongoDB. Baseei-me nos excelentes recursos e tutoriais disponibilizados pelo desenvolvedor Dunossauro (https://github.com/dunossauro) para aprimorar minhas habilidades em MongoDB.
 
+## Pré-requisitos
+
+- Docker
+- docker-compose
+
+## Instruções
+
+Para executar o MongoDB e o mongo-express em containers Docker, siga os seguintes passos:
+
+1. Clone este repositório em sua máquina local.
+2. Navegue até o diretório do projeto.
+3. Execute o seguinte comando no terminal:
+   - docker-compose up -d
+   - Este comando irá iniciar os containers do MongoDB e do mongo-express em background.
+
+4. Para acessar o mongo-express, abra o navegador e acesse o seguinte endereço:
+   - http://localhost:8081
+
 ## Conteúdo
 
 O repositório contém as seguintes pastas:
 
-- `exemplos`: exemplos de código que mostram como criar bancos de dados e coleções, inserir e recuperar dados, fazer consultas avançadas e muito mais.
-- `projetos`: projetos completos que aplicam os conceitos de MongoDB em um contexto mais prático.
+- `example`: exemplos de código que mostram como criar bancos de dados e coleções, inserir e recuperar dados, fazer consultas avançadas e muito mais.
+- `projects`: projetos completos que aplicam os conceitos de MongoDB em um contexto mais prático.
 - `exercícios`: exercícios para ajudar você a praticar e aprimorar suas habilidades em MongoDB.
 
 ## Como usar
@@ -25,7 +43,7 @@ Se você quiser contribuir com este projeto, sinta-se à vontade para abrir uma 
 
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB University](https://university.mongodb.com/)
-- [Dunossauro - MongoDB examples](https://github.com/dunossauro/mongodb-examples)
+- [Dunossauro - MongoDB](https://github.com/dunossauro/live-de-python/tree/main/codigo/Live174)
 
 ## Licença
 
