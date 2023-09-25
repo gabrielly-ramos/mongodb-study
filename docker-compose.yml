@@ -5,12 +5,11 @@ services:
   mongo:
     image: mongo
     restart: always
-    
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
     ports:
-      - 27050:27050
+      - 27017:27017
 
   mongo-express:
     image: mongo-express
@@ -20,4 +19,4 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
-      ME_CONFIG_MONGODB_URL: mongodb://root:example@localhost:27050/
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
